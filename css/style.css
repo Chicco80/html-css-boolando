@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  margin: 0 auto;
+  width: 60%;
+  font-size: 0;
+}
+
+.box {
+  width: calc(100% / 3 - 8px);
+  height: 500px;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 4px;
+}
+
+.description{
+    font-size: 18px;
+    margin-left: 4px;
+}
+
+.price{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.off{
+    text-decoration: line-through;
+}
