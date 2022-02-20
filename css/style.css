@@ -10,34 +10,30 @@ main {
   font-size: 0;
 }
 
-.container {
-  width: calc(100% / 3);
+.card{
+  width: 30%;
   height: 500px;
   border: 1px solid black;
   display: inline-block;
+  margin: 10px;
+  position: relative;
 }
-
-.description {
+.card-image{
   width: 100%;
-  height: 80px;
-  border: 1px solid black;
-  margin-top: 10px;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.img-overlay{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top:0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: none;
-
+.card-description{
+  font-size: 14px;
+  margin-left: 10px;
 }
 
 
-.cuore {                                                                                                                                  
+/* .cuore {                                                                                                                                  
   width: 40px;
   height: 30px;
   font-size: 30px;
@@ -51,9 +47,8 @@ main {
 }
 .cuore:hover {
   color: red;
-}
+} */
 
 
  
   
-
