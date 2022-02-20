@@ -11,44 +11,70 @@ main {
 }
 
 .card{
-  width: 30%;
+  width: calc(100% / 3);
   height: 500px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: inline-block;
-  margin: 10px;
+  padding: 10px;
   position: relative;
-}
-.card-image{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
+  
+   
 }
 
 .card-description{
   font-size: 14px;
-  margin-left: 10px;
-}
-
-
-/* .cuore {                                                                                                                                  
-  width: 40px;
-  height: 30px;
-  font-size: 30px;
-  border: 1px solid black;
-  background-color: white;
-  text-align: center;
-  line-height: 30px;
-  position: absolute;
-  top: 10px;
-  right: 0;
-}
-.cuore:hover {
-  color: red;
-} */
-
-
- 
+  margin-top: 10px;
   
+}
+
+.description-prezzo{
+  color: red;
+}
+
+.description-off{
+  text-decoration: line-through;
+}
+
+img{
+  width: 100%;
+  
+}
+.sconto{
+  font-size: 20px;
+  background-color: red;
+  margin-right: 3px;
+  border 1 px solid black;
+  padding:5px;
+}
+
+.sostenibilità{
+  font-size: 20px;
+  background-color: green;
+  padding:5px;
+}
+.etichette{
+  position: absolute;
+  bottom: 100px;
+  left: 10px;
+  color:white;
+}
+.cuore{
+  font-size: 25px;
+  background-color: white;
+  padding: 10px;
+  position: absolute;
+  right: 5px;
+  
+}
+.cuore:hover{
+  color: red;
+}
+.second{
+  display:none;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.card-image:hover .second{
+  display: block;
+}
